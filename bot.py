@@ -119,11 +119,13 @@ class Bot:
                         self.logger.info("Started to record {}".format(streamer[0]))
 
                         # prep args
+                        now = datetime.datetime.now()
+                        date = now.strftime("%m-%d-%Y_%H-%M-%S")
                         args = ["streamlink",  # streamlink bin
                                 "https://chaturbate.com/{}/".format(streamer[0]),  # chaturbate url
                                 "best",
                                 "-o",
-                                "videos/{}-{}.mp4".format(streamer[0], datetime.datetime.now())]
+                                "videos/{}_{}.mp4".format(streamer[0], date)]
                         # append idx and process to processes list
                         self.processes.append([streamer[0], subprocess.Popen(args, stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)])
 
