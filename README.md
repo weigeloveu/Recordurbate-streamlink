@@ -26,7 +26,7 @@ View the usage/help text
 ./Recordurbate help
 ```
 
-View list of currently downloading streams
+Check who is online, and view list of currently downloading streams
 ```
 ./status.py
 ```
