@@ -3,15 +3,5 @@
     "rate_limit": true,
     "rate_limit_time": 5,
     "default_export_location": "./list.txt",
-    "streamers": [
-        "evelynpiers",
-        "fuckin_purrfect",
-        "huntertiana",
-        "lil_eva",
-        "molly_p",
-        "uwuxo",
-        "eatthebooty420",
-        "purelovecult",
-        "heatherbby9"
-    ]
+    "streamers": []
 }
