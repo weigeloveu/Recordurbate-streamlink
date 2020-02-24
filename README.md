@@ -24,6 +24,11 @@ View the usage/help text
 ./Recordurbate help
 ```
 
+View list of currently downloading streams
+```
+./status.py
+```
+
 Add or remove a streamer to record
 ```
 ./Recordurbate.py [add | del] username
