@@ -67,7 +67,7 @@ class Bot:
                 self.config["streamers"].append([new_streamer, False])
 
     def is_online(self, username):
-        url = "https://chaturbate.com/get_edge_hls_url_ajax/"
+        url = "https://bongacams.com/get_edge_hls_url_ajax/"
         headers = {"X-Requested-With": "XMLHttpRequest"}
         data = {"room_slug": username, "bandwidth": "high"}
 
@@ -121,7 +121,7 @@ class Bot:
                         now = datetime.datetime.now()
                         date = now.strftime("%m-%d-%Y_%H-%M-%S")
                         args = ["streamlink",  # streamlink bin
-                                "https://chaturbate.com/{}/".format(streamer[0]),  # chaturbate url
+                                "https://bongacams.com/{}/".format(streamer[0]),  # chaturbate url
                                 "best",
                                 "-o",
                                 "videos/{}_{}.mp4".format(streamer[0], date)]
